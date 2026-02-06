@@ -1,0 +1,18 @@
+[vlan 활용]
+1. vlan 생성
+vlan database
+vlan 12
+vlan 34
+vlan 56
+exit
+sh vlan-switch brief
+2. vlan 할당
+int ran f1/1 - 2
+sw mo acc
+sw acc vlan 12
+int ran f1/3 - 4
+sw mo acc
+sw acc vl 34
+int ran f1/5 - 6
+sw mo acc
+sw acc vl 56
